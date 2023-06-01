@@ -1,0 +1,84 @@
+---
+layout: 
+sitemap: false
+---
+
+{
+  "background_color": "#f4f4f4",
+  "description": {{ site.description | jsonify }},
+  "display": "standalone",
+  "name": {{ site.name | jsonify }},
+  "scope": "/",
+  "short_name": {{ site.name | jsonify }},
+  "start_url": "/",
+  "theme_color": "#000000",
+  "categories": [
+    "business",
+    "education",
+    "finance",
+    "lifestyle",
+    "personalization",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "/assets/images/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/maskable.png",
+      "purpose": "maskable",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/images/logo.svg",
+      "type": "image/svg+xml",
+      "purpose": "any",
+      "sizes": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/assets/images/android-chrome-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "/about/",
+      "icons": [
+        {
+          "src": "/assets/images/android-chrome-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/",
+      "icons": [
+        {
+          "src": "/assets/images/android-chrome-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
